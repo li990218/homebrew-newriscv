@@ -52,8 +52,8 @@ class RiscvGnuToolchain < Formula
 
     # need to pull in needed submodules (now that they are disabled above)
     system "git", "submodule", "update", "--init", "--recursive", "newlib"
-    system "git", "submodule", "update", "--init", "--recursive", "riscv-binutils"
-    system "git", "submodule", "update", "--init", "--recursive", "riscv-gcc"
+    system "git", "submodule", "update", "--init", "--recursive", "binutils"
+    system "git", "submodule", "update", "--init", "--recursive", "gcc"
 
     args = [
       "--prefix=#{prefix}",
